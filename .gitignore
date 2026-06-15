@@ -1,0 +1,18 @@
+# 강의 자료 (타인 저작물 - 저장소 제외)
+*.pdf
+
+# Jupyter
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# 환경 변수
+.env
+
+# OS
+.DS_Store

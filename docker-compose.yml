@@ -1,0 +1,23 @@
+# RAG 마스터 실습 환경 (맥북 / Apple Silicon)
+# 가벼운 arm64 Jupyter 컨테이너 + 맥 네이티브 LM Studio
+# Unsloth 제거: RAG 실습엔 불필요 (파인튜닝 전용 + 맥에서 에뮬레이션 불안정)
+# 컨테이너 -> 호스트 LM Studio: http://host.docker.internal:12345/v1
+
+services:
+  jupyter:
+    build:
+      context: .
+      dockerfile: Dockerfile.jupyter
+    image: 'rag-jupyter:latest'
+    container_name: rag_jupyter
+    restart: unless-stopped
+    ports:
+      - "10020:8888"                # Jupyter Lab
+    volumes:
+      - ./work:/home/jovyan/work    # 노트북 영속 디렉토리
+    environment:
+      - TZ=Asia/Seoul
+      - JUPYTER_TOKEN=rag                              # 접속 토큰
+      - OPENAI_BASE_URL=http://host.docker.internal:12345/v1   # LM Studio 기본 엔드포인트
+    extra_hosts:
+      - "host.docker.internal:host-gateway"           # 호스트 LM Studio 접근

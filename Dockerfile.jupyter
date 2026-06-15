@@ -1,0 +1,13 @@
+# 가벼운 Jupyter Lab + RAG 라이브러리 (Apple Silicon arm64 네이티브)
+# 베이스: jupyter docker-stacks (멀티아치, 에뮬레이션 없음 -> 커널 안정적)
+FROM quay.io/jupyter/scipy-notebook:latest
+
+# RAG 실습 라이브러리 (이미지에 미리 설치 -> 매 부팅 재설치 불필요)
+RUN pip install --no-cache-dir \
+    openai \
+    langchain \
+    langchain-core \
+    langchain-openai \
+    langchain-community \
+    tiktoken \
+    pypdf
