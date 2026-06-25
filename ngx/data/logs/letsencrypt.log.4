@@ -1,0 +1,562 @@
+2026-06-25 04:41:00,501:DEBUG:certbot._internal.main:certbot version: 5.6.0
+2026-06-25 04:41:00,501:DEBUG:certbot._internal.main:Location of certbot entry point: /opt/certbot/bin/certbot
+2026-06-25 04:41:00,501:DEBUG:certbot._internal.main:Arguments: ['-n', '--config', '/etc/letsencrypt.ini', '--work-dir', '/tmp/letsencrypt-lib', '--logs-dir', '/data/logs', '--cert-name', 'npm-1', '--agree-tos', '-m', 'kevin2.jhpark@gmail.com', '--preferred-challenges', 'dns', '--domains', 'my.devtokki.com', '--authenticator', 'dns-route53', '--key-type', 'ecdsa']
+2026-06-25 04:41:00,501:DEBUG:certbot._internal.main:Discovered plugins: PluginsRegistry(PluginEntryPoint#certbot-route53:auth,PluginEntryPoint#dns-route53,PluginEntryPoint#manual,PluginEntryPoint#null,PluginEntryPoint#standalone,PluginEntryPoint#webroot)
+2026-06-25 04:41:00,562:DEBUG:certbot._internal.log:Root logging level set at 30
+2026-06-25 04:41:00,564:DEBUG:certbot._internal.plugins.selection:Requested authenticator dns-route53 and installer None
+2026-06-25 04:41:00,564:DEBUG:botocore.hooks:Changing event name from creating-client-class.iot-data to creating-client-class.iot-data-plane
+2026-06-25 04:41:00,567:DEBUG:botocore.hooks:Changing event name from before-call.apigateway to before-call.api-gateway
+2026-06-25 04:41:00,567:DEBUG:botocore.hooks:Changing event name from request-created.machinelearning.Predict to request-created.machine-learning.Predict
+2026-06-25 04:41:00,568:DEBUG:botocore.hooks:Changing event name from before-parameter-build.autoscaling.CreateLaunchConfiguration to before-parameter-build.auto-scaling.CreateLaunchConfiguration
+2026-06-25 04:41:00,568:DEBUG:botocore.hooks:Changing event name from before-parameter-build.route53 to before-parameter-build.route-53
+2026-06-25 04:41:00,568:DEBUG:botocore.hooks:Changing event name from request-created.cloudsearchdomain.Search to request-created.cloudsearch-domain.Search
+2026-06-25 04:41:00,568:DEBUG:botocore.hooks:Changing event name from docs.*.autoscaling.CreateLaunchConfiguration.complete-section to docs.*.auto-scaling.CreateLaunchConfiguration.complete-section
+2026-06-25 04:41:00,569:DEBUG:botocore.hooks:Changing event name from before-parameter-build.logs.CreateExportTask to before-parameter-build.cloudwatch-logs.CreateExportTask
+2026-06-25 04:41:00,569:DEBUG:botocore.hooks:Changing event name from docs.*.logs.CreateExportTask.complete-section to docs.*.cloudwatch-logs.CreateExportTask.complete-section
+2026-06-25 04:41:00,570:DEBUG:botocore.hooks:Changing event name from before-parameter-build.cloudsearchdomain.Search to before-parameter-build.cloudsearch-domain.Search
+2026-06-25 04:41:00,570:DEBUG:botocore.hooks:Changing event name from docs.*.cloudsearchdomain.Search.complete-section to docs.*.cloudsearch-domain.Search.complete-section
+2026-06-25 04:41:00,571:DEBUG:botocore.utils:IMDS ENDPOINT: http://169.254.169.254/
+2026-06-25 04:41:00,572:DEBUG:botocore.credentials:Looking for credentials via: env
+2026-06-25 04:41:00,572:DEBUG:botocore.credentials:Looking for credentials via: assume-role
+2026-06-25 04:41:00,572:DEBUG:botocore.credentials:Looking for credentials via: assume-role-with-web-identity
+2026-06-25 04:41:00,573:DEBUG:botocore.credentials:Looking for credentials via: sso
+2026-06-25 04:41:00,573:DEBUG:botocore.credentials:Looking for credentials via: shared-credentials-file
+2026-06-25 04:41:00,573:DEBUG:botocore.credentials:Looking for credentials via: login
+2026-06-25 04:41:00,573:DEBUG:botocore.credentials:Looking for credentials via: custom-process
+2026-06-25 04:41:00,573:DEBUG:botocore.credentials:Looking for credentials via: config-file
+2026-06-25 04:41:00,574:INFO:botocore.credentials:Credentials found in config file: /etc/letsencrypt/credentials/credentials-1
+2026-06-25 04:41:00,576:DEBUG:botocore.loaders:Loading JSON file: /opt/certbot/lib/python3.13/site-packages/botocore/data/endpoints.json
+2026-06-25 04:41:00,589:DEBUG:botocore.loaders:Loading JSON file: /opt/certbot/lib/python3.13/site-packages/botocore/data/sdk-default-configuration.json
+2026-06-25 04:41:00,589:DEBUG:botocore.hooks:Event choose-service-name: calling handler <function handle_service_name_alias at 0xffffb4272f20>
+2026-06-25 04:41:00,597:DEBUG:botocore.loaders:Loading JSON file: /opt/certbot/lib/python3.13/site-packages/botocore/data/route53/2013-04-01/service-2.json.gz
+2026-06-25 04:41:00,604:DEBUG:botocore.loaders:Loading JSON file: /opt/certbot/lib/python3.13/site-packages/botocore/data/route53/2013-04-01/endpoint-rule-set-1.json.gz
+2026-06-25 04:41:00,605:DEBUG:botocore.loaders:Loading JSON file: /opt/certbot/lib/python3.13/site-packages/botocore/data/partitions.json
+2026-06-25 04:41:00,606:DEBUG:botocore.hooks:Event creating-client-class.route-53: calling handler <function add_generate_presigned_url at 0xffffb43f82c0>
+2026-06-25 04:41:00,606:DEBUG:botocore.configprovider:Looking for endpoint for route53 via: environment_service
+2026-06-25 04:41:00,606:DEBUG:botocore.configprovider:Looking for endpoint for route53 via: environment_global
+2026-06-25 04:41:00,606:DEBUG:botocore.configprovider:Looking for endpoint for route53 via: config_service
+2026-06-25 04:41:00,606:DEBUG:botocore.configprovider:Looking for endpoint for route53 via: config_global
+2026-06-25 04:41:00,606:DEBUG:botocore.configprovider:No configured endpoint found.
+2026-06-25 04:41:00,607:DEBUG:botocore.endpoint:Setting route53 timeout as (60, 60)
+2026-06-25 04:41:00,607:DEBUG:botocore.hooks:Changing event name from creating-serializer.route53 to creating-serializer.route-53
+2026-06-25 04:41:00,608:DEBUG:botocore.loaders:Loading JSON file: /opt/certbot/lib/python3.13/site-packages/botocore/data/_retry.json
+2026-06-25 04:41:00,608:DEBUG:botocore.client:Registering retry handlers for service: route53
+2026-06-25 04:41:00,608:DEBUG:certbot._internal.plugins.selection:Single candidate plugin: * dns-route53
+Description: Obtain certificates using a DNS TXT record (if you are using AWS Route53 for DNS).
+Interfaces: Authenticator, Plugin
+Entry point: EntryPoint(name='dns-route53', value='certbot_dns_route53._internal.dns_route53:Authenticator', group='certbot.plugins')
+Initialized: <certbot_dns_route53._internal.dns_route53.Authenticator object at 0xffffb4b37cb0>
+Prep: True
+2026-06-25 04:41:00,609:DEBUG:certbot._internal.plugins.selection:Selected authenticator <certbot_dns_route53._internal.dns_route53.Authenticator object at 0xffffb4b37cb0> and installer None
+2026-06-25 04:41:00,609:INFO:certbot._internal.plugins.selection:Plugins selected: Authenticator dns-route53, Installer None
+2026-06-25 04:41:00,630:DEBUG:acme.client:Sending GET request to https://acme-v02.api.letsencrypt.org/directory.
+2026-06-25 04:41:00,631:DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): acme-v02.api.letsencrypt.org:443
+2026-06-25 04:41:01,236:DEBUG:urllib3.connectionpool:https://acme-v02.api.letsencrypt.org:443 "GET /directory HTTP/1.1" 200 1031
+2026-06-25 04:41:01,237:DEBUG:acme.client:Received response:
+HTTP 200
+Server: nginx
+Date: Thu, 25 Jun 2026 04:41:01 GMT
+Content-Type: application/json
+Content-Length: 1031
+Connection: keep-alive
+Cache-Control: public, max-age=0, no-cache
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=604800
+
+{
+  "fADfpj_wuCI": "https://community.letsencrypt.org/t/adding-random-entries-to-the-directory/33417",
+  "keyChange": "https://acme-v02.api.letsencrypt.org/acme/key-change",
+  "meta": {
+    "caaIdentities": [
+      "letsencrypt.org"
+    ],
+    "profiles": {
+      "classic": "https://letsencrypt.org/docs/profiles#classic",
+      "shortlived": "https://letsencrypt.org/docs/profiles#shortlived",
+      "tlsclient": "https://letsencrypt.org/docs/profiles#tlsclient",
+      "tlsserver": "https://letsencrypt.org/docs/profiles#tlsserver"
+    },
+    "termsOfService": "https://letsencrypt.org/documents/LE-SA-v1.7-June-04-2026.pdf",
+    "website": "https://letsencrypt.org"
+  },
+  "newAccount": "https://acme-v02.api.letsencrypt.org/acme/new-acct",
+  "newNonce": "https://acme-v02.api.letsencrypt.org/acme/new-nonce",
+  "newOrder": "https://acme-v02.api.letsencrypt.org/acme/new-order",
+  "renewalInfo": "https://acme-v02.api.letsencrypt.org/acme/renewal-info",
+  "revokeCert": "https://acme-v02.api.letsencrypt.org/acme/revoke-cert"
+}
+2026-06-25 04:41:01,239:DEBUG:acme.client:Requesting fresh nonce
+2026-06-25 04:41:01,239:DEBUG:acme.client:Sending HEAD request to https://acme-v02.api.letsencrypt.org/acme/new-nonce.
+2026-06-25 04:41:01,404:DEBUG:urllib3.connectionpool:https://acme-v02.api.letsencrypt.org:443 "HEAD /acme/new-nonce HTTP/1.1" 200 0
+2026-06-25 04:41:01,405:DEBUG:acme.client:Received response:
+HTTP 200
+Server: nginx
+Date: Thu, 25 Jun 2026 04:41:01 GMT
+Connection: keep-alive
+Cache-Control: public, max-age=0, no-cache
+Link: <https://acme-v02.api.letsencrypt.org/directory>;rel="index"
+Replay-Nonce: ZK6w-b9snWiyiV5_IMrjqcFlioiCmEe_4PD1RzQWe-2bAPUD6RU
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=604800
+
+
+2026-06-25 04:41:01,406:DEBUG:acme.client:Storing nonce: ZK6w-b9snWiyiV5_IMrjqcFlioiCmEe_4PD1RzQWe-2bAPUD6RU
+2026-06-25 04:41:01,406:DEBUG:acme.client:JWS payload:
+b'{\n  "contact": [\n    "mailto:kevin2.jhpark@gmail.com"\n  ],\n  "termsOfServiceAgreed": true\n}'
+2026-06-25 04:41:01,412:DEBUG:acme.client:Sending POST request to https://acme-v02.api.letsencrypt.org/acme/new-acct:
+{
+  "protected": "eyJhbGciOiAiUlMyNTYiLCAiandrIjogeyJuIjogInNSempISVpNUTFrdHBiaTd6UkhEVVlsbFFyMTNCeENER0JDWGpqSXAzRFRIRGwwM3p6TTd6RFYzTW1xQ2RRcWtYMFBEVjBlcmZ6Tk1HakN3UWM4ZGNxamhabE1qYno3M1M3VXhLTkg0NmVqTV9INTlWUEx0Nm5FNnVIelV1OXluUTBKYVJEN0owY3VzTkhPVE9EOWRjM1hvY21qSlV5TGprSENiOUZtR0NLeHlLdmJHUnhLSXROSERMWkFvUnU3NU1HSWs3dThMSnlKd1VrbXVJeThqVmdacERkbkZYdU1WMUI5aVR3SjB0N2p2bmhrQlB0eWNnX0F4RURCdXJscHJSX0N4bjFHOTZhV1M1U3BzT3VlRzVHNGpjN2NvZ0xVSUdVaFMwV0FPWEs3MEwtMXNmS21VNWFWeFN0NTExTktNdm9FOU9BUmY3cUpFbThfZFdjeGtydyIsICJlIjogIkFRQUIiLCAia3R5IjogIlJTQSJ9LCAibm9uY2UiOiAiWks2dy1iOXNuV2l5aVY1X0lNcmpxY0ZsaW9pQ21FZV80UEQxUnpRV2UtMmJBUFVENlJVIiwgInVybCI6ICJodHRwczovL2FjbWUtdjAyLmFwaS5sZXRzZW5jcnlwdC5vcmcvYWNtZS9uZXctYWNjdCJ9",
+  "signature": "E4lBSs1m9DMl22oeI4fZckCFwmDy5JeTFVI9Hnb2OoJjmUVP9DEDp6LfhVHuEvGS2r96EO8npeVG3MPMU8DOUq9mMWUQ0WoL_R5lrb_z5lerY1juuKDpBrOv6mkWbUqnL_sBq47mM5NAaXICTFWRgrHmyWyPvdmuek2OWweIlc6ExZLM32nhqeiO8prO8puRo7wLf0sHrD0tWAszdQi3vFB9WzGjFAGE4JWJXiOTGHdtwfi9zSdA2nCwIXv0YTZlbNGKCIhbdb98nltM2sbxhdN5cKjcuXoH8A2zxdaXh4e1YhBw8mK6ydA0I4KGeeSVCRcXkUB4Ok0hmQgbtnr0aQ",
+  "payload": "ewogICJjb250YWN0IjogWwogICAgIm1haWx0bzprZXZpbjIuamhwYXJrQGdtYWlsLmNvbSIKICBdLAogICJ0ZXJtc09mU2VydmljZUFncmVlZCI6IHRydWUKfQ"
+}
+2026-06-25 04:41:01,777:DEBUG:urllib3.connectionpool:https://acme-v02.api.letsencrypt.org:443 "POST /acme/new-acct HTTP/1.1" 201 477
+2026-06-25 04:41:01,778:DEBUG:acme.client:Received response:
+HTTP 201
+Server: nginx
+Date: Thu, 25 Jun 2026 04:41:01 GMT
+Content-Type: application/json
+Content-Length: 477
+Connection: keep-alive
+Boulder-Requester: 3470906756
+Cache-Control: public, max-age=0, no-cache
+Link: <https://acme-v02.api.letsencrypt.org/directory>;rel="index", <https://letsencrypt.org/documents/LE-SA-v1.7-June-04-2026.pdf>;rel="terms-of-service"
+Location: https://acme-v02.api.letsencrypt.org/acme/acct/3470906756
+Replay-Nonce: Hv4Ma3yAmykrTwGQBVlAs8dr3ToCiI4ER1JIi02o-_OKZlzoI44
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=604800
+
+{
+  "key": {
+    "kty": "RSA",
+    "n": "sRzjHIZMQ1ktpbi7zRHDUYllQr13BxCDGBCXjjIp3DTHDl03zzM7zDV3MmqCdQqkX0PDV0erfzNMGjCwQc8dcqjhZlMjbz73S7UxKNH46ejM_H59VPLt6nE6uHzUu9ynQ0JaRD7J0cusNHOTOD9dc3XocmjJUyLjkHCb9FmGCKxyKvbGRxKItNHDLZAoRu75MGIk7u8LJyJwUkmuIy8jVgZpDdnFXuMV1B9iTwJ0t7jvnhkBPtycg_AxEDBurlprR_Cxn1G96aWS5SpsOueG5G4jc7cogLUIGUhS0WAOXK70L-1sfKmU5aVxSt511NKMvoE9OARf7qJEm8_dWcxkrw",
+    "e": "AQAB"
+  },
+  "createdAt": "2026-06-25T04:41:01.730846794Z",
+  "status": "valid"
+}
+2026-06-25 04:41:01,778:DEBUG:acme.client:Storing nonce: Hv4Ma3yAmykrTwGQBVlAs8dr3ToCiI4ER1JIi02o-_OKZlzoI44
+2026-06-25 04:41:01,786:DEBUG:certbot._internal.display.obj:Notifying user: Account registered.
+2026-06-25 04:41:01,787:DEBUG:certbot._internal.main:Picked account: <Account(RegistrationResource(body=Registration(key=JWKRSA(key=<ComparableRSAKey(<cryptography.hazmat.bindings._rust.openssl.rsa.RSAPublicKey object at 0xffffb3f85c50>)>), contact=(), agreement=None, status='valid', terms_of_service_agreed=None, only_return_existing=None, external_account_binding=None), uri='https://acme-v02.api.letsencrypt.org/acme/acct/3470906756', new_authzr_uri=None, terms_of_service='https://letsencrypt.org/documents/LE-SA-v1.7-June-04-2026.pdf'), 63332bd66b068e527a514ac6cf960cb4, Meta(creation_dt=datetime.datetime(2026, 6, 25, 4, 41, 1, tzinfo=datetime.timezone.utc), creation_host='05775652f2af', register_to_eff=None))>
+2026-06-25 04:41:01,789:DEBUG:certbot._internal.display.obj:Notifying user: Requesting a certificate for my.devtokki.com
+2026-06-25 04:41:01,791:DEBUG:acme.client:JWS payload:
+b'{\n  "identifiers": [\n    {\n      "type": "dns",\n      "value": "my.devtokki.com"\n    }\n  ]\n}'
+2026-06-25 04:41:01,792:DEBUG:acme.client:Sending POST request to https://acme-v02.api.letsencrypt.org/acme/new-order:
+{
+  "protected": "eyJhbGciOiAiUlMyNTYiLCAia2lkIjogImh0dHBzOi8vYWNtZS12MDIuYXBpLmxldHNlbmNyeXB0Lm9yZy9hY21lL2FjY3QvMzQ3MDkwNjc1NiIsICJub25jZSI6ICJIdjRNYTN5QW15a3JUd0dRQlZsQXM4ZHIzVG9DaUk0RVIxSklpMDJvLV9PS1psem9JNDQiLCAidXJsIjogImh0dHBzOi8vYWNtZS12MDIuYXBpLmxldHNlbmNyeXB0Lm9yZy9hY21lL25ldy1vcmRlciJ9",
+  "signature": "RKsadUnQTFKYlWHyUKQJDEAN-WYtMw6qwfJQRz20q1mbEUDB_UzMPrlQluS4spxEmA-JerQoocgwnRuVgPjamIsB1JJ2Ib4piyHQoOqzA4xg1gmUFjXht5C9cCERG5R--E0fwKWa5wjKJ816RADEAJRwchV1_rA2bwopwEc_jr6yhA5BRGnOk69qB2SSJ1YHnlxiWmEx1nu48OMCZNHtgNbiEKokxla53X9u-Cv5VMoODQ41fp_4x9aApfddTGElFLGKCd4d2EBtNVIidiZNmVsiSakxpZ_yjsegoq5zGylJSiKLPR6uS2oUDE0srNoKHO-OKhSWcuU-Phngv8uc7Q",
+  "payload": "ewogICJpZGVudGlmaWVycyI6IFsKICAgIHsKICAgICAgInR5cGUiOiAiZG5zIiwKICAgICAgInZhbHVlIjogIm15LmRldnRva2tpLmNvbSIKICAgIH0KICBdCn0"
+}
+2026-06-25 04:41:02,066:DEBUG:urllib3.connectionpool:https://acme-v02.api.letsencrypt.org:443 "POST /acme/new-order HTTP/1.1" 201 349
+2026-06-25 04:41:02,067:DEBUG:acme.client:Received response:
+HTTP 201
+Server: nginx
+Date: Thu, 25 Jun 2026 04:41:02 GMT
+Content-Type: application/json
+Content-Length: 349
+Connection: keep-alive
+Boulder-Requester: 3470906756
+Cache-Control: public, max-age=0, no-cache
+Link: <https://acme-v02.api.letsencrypt.org/directory>;rel="index"
+Location: https://acme-v02.api.letsencrypt.org/acme/order/3470906756/525195231486
+Replay-Nonce: ZK6w-b9sws-MNQAf8USfchz84ySY2FfoRZScwRrQBWVs5kBG70s
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=604800
+
+{
+  "status": "pending",
+  "expires": "2026-07-02T04:41:02Z",
+  "identifiers": [
+    {
+      "type": "dns",
+      "value": "my.devtokki.com"
+    }
+  ],
+  "authorizations": [
+    "https://acme-v02.api.letsencrypt.org/acme/authz/3470906756/727790969056"
+  ],
+  "finalize": "https://acme-v02.api.letsencrypt.org/acme/finalize/3470906756/525195231486"
+}
+2026-06-25 04:41:02,067:DEBUG:acme.client:Storing nonce: ZK6w-b9sws-MNQAf8USfchz84ySY2FfoRZScwRrQBWVs5kBG70s
+2026-06-25 04:41:02,067:DEBUG:acme.client:JWS payload:
+b''
+2026-06-25 04:41:02,068:DEBUG:acme.client:Sending POST request to https://acme-v02.api.letsencrypt.org/acme/authz/3470906756/727790969056:
+{
+  "protected": "eyJhbGciOiAiUlMyNTYiLCAia2lkIjogImh0dHBzOi8vYWNtZS12MDIuYXBpLmxldHNlbmNyeXB0Lm9yZy9hY21lL2FjY3QvMzQ3MDkwNjc1NiIsICJub25jZSI6ICJaSzZ3LWI5c3dzLU1OUUFmOFVTZmNoejg0eVNZMkZmb1JaU2N3UnJRQldWczVrQkc3MHMiLCAidXJsIjogImh0dHBzOi8vYWNtZS12MDIuYXBpLmxldHNlbmNyeXB0Lm9yZy9hY21lL2F1dGh6LzM0NzA5MDY3NTYvNzI3NzkwOTY5MDU2In0",
+  "signature": "INlT6m9sXRT-dzzkr0dNz8fUR-bMiaBLtajIBW7UyXhO1x7zw0KKMKaba7EH_3chyxfThq7gXjKmkyyVzEsx8wnkcHKkj51ey4A3Dgqp4St1fWcV_kXbuA3wUDfl4K0Dvd2lcjyaIUuoAPYyo8Xt6RqPIECHXVOkWnoNnV-AcgPLar0G0MzpFvMtIsEztKsewoHFShaMRJTI_EPUHp2CYbtzTnxPGHT6IUiV7zEJWLh8eH6pArdnB7_uZDe5GicNZmeOqh2urBlAhhv6uamPLKv-1JIQoxlhWiwCHifmvYPrfJd8GVfdpcOt6Nj0C09JG3WFSnLFWt85tbacW-NUHQ",
+  "payload": ""
+}
+2026-06-25 04:41:02,242:DEBUG:urllib3.connectionpool:https://acme-v02.api.letsencrypt.org:443 "POST /acme/authz/3470906756/727790969056 HTTP/1.1" 200 823
+2026-06-25 04:41:02,243:DEBUG:acme.client:Received response:
+HTTP 200
+Server: nginx
+Date: Thu, 25 Jun 2026 04:41:02 GMT
+Content-Type: application/json
+Content-Length: 823
+Connection: keep-alive
+Boulder-Requester: 3470906756
+Cache-Control: public, max-age=0, no-cache
+Link: <https://acme-v02.api.letsencrypt.org/directory>;rel="index"
+Replay-Nonce: Hv4Ma3yAh_X2wgnNbR4umdfpz-24Kjupt_dpyOsjPxtEm4kEKu8
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=604800
+
+{
+  "identifier": {
+    "type": "dns",
+    "value": "my.devtokki.com"
+  },
+  "status": "pending",
+  "expires": "2026-07-02T04:41:02Z",
+  "challenges": [
+    {
+      "type": "tls-alpn-01",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall/3470906756/727790969056/3HaS8w",
+      "status": "pending",
+      "token": "k8iCPz36uAKUFfPc1W27UbMONZjNPlK54N7qMPZZ9Ig"
+    },
+    {
+      "type": "dns-01",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall/3470906756/727790969056/fiejnw",
+      "status": "pending",
+      "token": "k8iCPz36uAKUFfPc1W27UbMONZjNPlK54N7qMPZZ9Ig"
+    },
+    {
+      "type": "http-01",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall/3470906756/727790969056/9fiA7A",
+      "status": "pending",
+      "token": "k8iCPz36uAKUFfPc1W27UbMONZjNPlK54N7qMPZZ9Ig"
+    }
+  ]
+}
+2026-06-25 04:41:02,243:DEBUG:acme.client:Storing nonce: Hv4Ma3yAh_X2wgnNbR4umdfpz-24Kjupt_dpyOsjPxtEm4kEKu8
+2026-06-25 04:41:02,244:DEBUG:acme.challenges:tls-alpn-01 was not recognized, full message: {'type': 'tls-alpn-01', 'url': 'https://acme-v02.api.letsencrypt.org/acme/chall/3470906756/727790969056/3HaS8w', 'status': 'pending', 'token': 'k8iCPz36uAKUFfPc1W27UbMONZjNPlK54N7qMPZZ9Ig'}
+2026-06-25 04:41:02,244:INFO:certbot._internal.auth_handler:Performing the following challenges:
+2026-06-25 04:41:02,245:INFO:certbot._internal.auth_handler:dns-01 challenge for Identifier(typ=IdentifierType(dns), value='my.devtokki.com')
+2026-06-25 04:41:02,261:DEBUG:botocore.loaders:Loading JSON file: /opt/certbot/lib/python3.13/site-packages/botocore/data/route53/2013-04-01/paginators-1.json
+2026-06-25 04:41:02,263:DEBUG:botocore.hooks:Event before-parameter-build.route-53.ListHostedZones: calling handler <function fix_route53_ids at 0xffffb4295300>
+2026-06-25 04:41:02,263:DEBUG:botocore.hooks:Event before-parameter-build.route-53.ListHostedZones: calling handler <function generate_idempotent_uuid at 0xffffb42942c0>
+2026-06-25 04:41:02,263:DEBUG:botocore.hooks:Event before-parameter-build.route-53.ListHostedZones: calling handler <function _handle_request_validation_mode_member at 0xffffb4297060>
+2026-06-25 04:41:02,263:DEBUG:botocore.regions:Calling endpoint provider with parameters: {'UseDualStack': False, 'UseFIPS': False, 'Region': 'aws-global'}
+2026-06-25 04:41:02,264:DEBUG:botocore.regions:Endpoint provider result: https://route53.amazonaws.com
+2026-06-25 04:41:02,264:DEBUG:botocore.regions:Selecting from endpoint provider's list of auth schemes: "sigv4". User selected auth scheme is: "None"
+2026-06-25 04:41:02,264:DEBUG:botocore.regions:Selected auth type "v4" as "v4" with signing context params: {'region': 'us-east-1'}
+2026-06-25 04:41:02,264:DEBUG:botocore.hooks:Event before-call.route-53.ListHostedZones: calling handler <function add_recursion_detection_header at 0xffffb4273ce0>
+2026-06-25 04:41:02,265:DEBUG:botocore.hooks:Event before-call.route-53.ListHostedZones: calling handler <function inject_api_version_header_if_needed at 0xffffb4295da0>
+2026-06-25 04:41:02,265:DEBUG:botocore.endpoint:Making request for OperationModel(name=ListHostedZones) with params: {'url_path': '/2013-04-01/hostedzone', 'query_string': {}, 'method': 'GET', 'headers': {'User-Agent': 'Boto3/1.43.36 md/Botocore#1.43.36 ua/2.1 os/linux#6.10.14-linuxkit md/arch#aarch64 lang/python#3.13.5 md/pyimpl#CPython m/b,C,D,Z,n cfg/retry-mode#legacy Botocore/1.43.36'}, 'body': b'', 'url': 'https://route53.amazonaws.com/2013-04-01/hostedzone', 'context': {'client_region': 'aws-global', 'client_config': <botocore.config.Config object at 0xffffb4156120>, 'has_streaming_input': False, 'auth_type': 'v4', 'unsigned_payload': None, 'auth_options': ['aws.auth#sigv4'], 'signing': {'region': 'us-east-1'}, 'endpoint_properties': {'authSchemes': [{'name': 'sigv4', 'signingRegion': 'us-east-1'}]}}}
+2026-06-25 04:41:02,265:DEBUG:botocore.hooks:Event request-created.route-53.ListHostedZones: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0xffffb4155fd0>>
+2026-06-25 04:41:02,265:DEBUG:botocore.hooks:Event choose-signer.route-53.ListHostedZones: calling handler <function set_operation_specific_signer at 0xffffb4273f60>
+2026-06-25 04:41:02,266:DEBUG:botocore.auth:Calculating signature using v4 auth.
+2026-06-25 04:41:02,266:DEBUG:botocore.auth:CanonicalRequest:
+GET
+/2013-04-01/hostedzone
+
+host:route53.amazonaws.com
+x-amz-date:20260625T044102Z
+
+host;x-amz-date
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2026-06-25 04:41:02,266:DEBUG:botocore.auth:StringToSign:
+AWS4-HMAC-SHA256
+20260625T044102Z
+20260625/us-east-1/route53/aws4_request
+fa9318a9832a0e4ec7e81a2d7fab01697e2d007c36af86c668676396ca7a6e88
+2026-06-25 04:41:02,266:DEBUG:botocore.auth:Signature:
+83e678b36071784b9667fe21c7c1a6f077fe6bd004ac53caa6e1cf5d369c9a50
+2026-06-25 04:41:02,266:DEBUG:botocore.hooks:Event request-created.route-53.ListHostedZones: calling handler <bound method UserAgentString.rebuild_and_replace_user_agent_handler of <botocore.useragent.UserAgentString object at 0xffffb3f80050>>
+2026-06-25 04:41:02,266:DEBUG:botocore.hooks:Event request-created.route-53.ListHostedZones: calling handler <function add_retry_headers at 0xffffb4296840>
+2026-06-25 04:41:02,266:DEBUG:botocore.endpoint:Sending http request: <AWSPreparedRequest stream_output=False, method=GET, url=https://route53.amazonaws.com/2013-04-01/hostedzone, headers={'User-Agent': b'Boto3/1.43.36 md/Botocore#1.43.36 ua/2.1 os/linux#6.10.14-linuxkit md/arch#aarch64 lang/python#3.13.5 md/pyimpl#CPython m/b,C,D,Z,n cfg/retry-mode#legacy Botocore/1.43.36', 'X-Amz-Date': b'20260625T044102Z', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIAYWVWOCL2YTHDCLNC/20260625/us-east-1/route53/aws4_request, SignedHeaders=host;x-amz-date, Signature=83e678b36071784b9667fe21c7c1a6f077fe6bd004ac53caa6e1cf5d369c9a50', 'amz-sdk-invocation-id': b'33df3d5c-b8a8-40d2-9986-e90b6a6c39a8', 'amz-sdk-request': b'attempt=1'}>
+2026-06-25 04:41:02,267:DEBUG:botocore.httpsession:Certificate path: /opt/certbot/lib/python3.13/site-packages/certifi/cacert.pem
+2026-06-25 04:41:02,268:DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): route53.amazonaws.com:443
+2026-06-25 04:41:03,285:DEBUG:urllib3.connectionpool:https://route53.amazonaws.com:443 "GET /2013-04-01/hostedzone HTTP/1.1" 200 492
+2026-06-25 04:41:03,286:DEBUG:botocore.parsers:Response headers: {'x-amzn-RequestId': '5db96bf4-b5cb-42c9-9b83-1b6d855927f0', 'Content-Type': 'text/xml', 'Content-Length': '492', 'Date': 'Thu, 25 Jun 2026 04:41:03 GMT'}
+2026-06-25 04:41:03,286:DEBUG:botocore.parsers:Response body:
+b'<?xml version="1.0"?>\n<ListHostedZonesResponse xmlns="https://route53.amazonaws.com/doc/2013-04-01/"><HostedZones><HostedZone><Id>/hostedzone/Z02292833BQ3CDL2CIU8N</Id><Name>devtokki.com.</Name><CallerReference>e3dbbc31-c716-48b4-a141-8bf049556be9</CallerReference><Config><Comment></Comment><PrivateZone>false</PrivateZone></Config><ResourceRecordSetCount>3</ResourceRecordSetCount></HostedZone></HostedZones><IsTruncated>false</IsTruncated><MaxItems>100</MaxItems></ListHostedZonesResponse>'
+2026-06-25 04:41:03,287:DEBUG:botocore.hooks:Event needs-retry.route-53.ListHostedZones: calling handler <botocore.retryhandler.RetryHandler object at 0xffffb4157e00>
+2026-06-25 04:41:03,288:DEBUG:botocore.retryhandler:No retry needed.
+2026-06-25 04:41:03,288:DEBUG:botocore.hooks:Event before-parameter-build.route-53.ChangeResourceRecordSets: calling handler <function fix_route53_ids at 0xffffb4295300>
+2026-06-25 04:41:03,288:DEBUG:botocore.handlers:HostedZoneId /hostedzone/Z02292833BQ3CDL2CIU8N -> Z02292833BQ3CDL2CIU8N
+2026-06-25 04:41:03,289:DEBUG:botocore.hooks:Event before-parameter-build.route-53.ChangeResourceRecordSets: calling handler <function generate_idempotent_uuid at 0xffffb42942c0>
+2026-06-25 04:41:03,289:DEBUG:botocore.hooks:Event before-parameter-build.route-53.ChangeResourceRecordSets: calling handler <function _handle_request_validation_mode_member at 0xffffb4297060>
+2026-06-25 04:41:03,289:DEBUG:botocore.regions:Calling endpoint provider with parameters: {'UseDualStack': False, 'UseFIPS': False, 'Region': 'aws-global'}
+2026-06-25 04:41:03,289:DEBUG:botocore.regions:Endpoint provider result: https://route53.amazonaws.com
+2026-06-25 04:41:03,289:DEBUG:botocore.regions:Selecting from endpoint provider's list of auth schemes: "sigv4". User selected auth scheme is: "None"
+2026-06-25 04:41:03,289:DEBUG:botocore.regions:Selected auth type "v4" as "v4" with signing context params: {'region': 'us-east-1'}
+2026-06-25 04:41:03,291:DEBUG:botocore.hooks:Event before-call.route-53.ChangeResourceRecordSets: calling handler <function add_recursion_detection_header at 0xffffb4273ce0>
+2026-06-25 04:41:03,291:DEBUG:botocore.hooks:Event before-call.route-53.ChangeResourceRecordSets: calling handler <function inject_api_version_header_if_needed at 0xffffb4295da0>
+2026-06-25 04:41:03,291:DEBUG:botocore.endpoint:Making request for OperationModel(name=ChangeResourceRecordSets) with params: {'url_path': '/2013-04-01/hostedzone/Z02292833BQ3CDL2CIU8N/rrset/', 'query_string': {}, 'method': 'POST', 'headers': {'User-Agent': 'Boto3/1.43.36 md/Botocore#1.43.36 ua/2.1 os/linux#6.10.14-linuxkit md/arch#aarch64 lang/python#3.13.5 md/pyimpl#CPython m/D,b,Z,n cfg/retry-mode#legacy Botocore/1.43.36'}, 'body': b'<ChangeResourceRecordSetsRequest xmlns="https://route53.amazonaws.com/doc/2013-04-01/"><ChangeBatch><Comment>certbot-dns-route53 certificate validation UPSERT</Comment><Changes><Change><Action>UPSERT</Action><ResourceRecordSet><Name>_acme-challenge.my.devtokki.com</Name><Type>TXT</Type><TTL>10</TTL><ResourceRecords><ResourceRecord><Value>"_p626xsjlw7FcVyiEmpNmX_PEG7Bs4qH5uatlqCVB30"</Value></ResourceRecord></ResourceRecords></ResourceRecordSet></Change></Changes></ChangeBatch></ChangeResourceRecordSetsRequest>', 'url': 'https://route53.amazonaws.com/2013-04-01/hostedzone/Z02292833BQ3CDL2CIU8N/rrset/', 'context': {'client_region': 'aws-global', 'client_config': <botocore.config.Config object at 0xffffb4156120>, 'has_streaming_input': False, 'auth_type': 'v4', 'unsigned_payload': None, 'auth_options': ['aws.auth#sigv4'], 'signing': {'region': 'us-east-1'}, 'endpoint_properties': {'authSchemes': [{'name': 'sigv4', 'signingRegion': 'us-east-1'}]}}}
+2026-06-25 04:41:03,291:DEBUG:botocore.hooks:Event request-created.route-53.ChangeResourceRecordSets: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0xffffb4155fd0>>
+2026-06-25 04:41:03,291:DEBUG:botocore.hooks:Event choose-signer.route-53.ChangeResourceRecordSets: calling handler <function set_operation_specific_signer at 0xffffb4273f60>
+2026-06-25 04:41:03,292:DEBUG:botocore.auth:Calculating signature using v4 auth.
+2026-06-25 04:41:03,292:DEBUG:botocore.auth:CanonicalRequest:
+POST
+/2013-04-01/hostedzone/Z02292833BQ3CDL2CIU8N/rrset/
+
+host:route53.amazonaws.com
+x-amz-date:20260625T044103Z
+
+host;x-amz-date
+02e14e2c8b74da83a36b6b20c9961c40d5c6d5c8316dce20392711889ad483ac
+2026-06-25 04:41:03,292:DEBUG:botocore.auth:StringToSign:
+AWS4-HMAC-SHA256
+20260625T044103Z
+20260625/us-east-1/route53/aws4_request
+28e0109db2a4912b038794fce69ea1859cc8ae7cc6d3dd28484d00deb1fa9c83
+2026-06-25 04:41:03,292:DEBUG:botocore.auth:Signature:
+03c5bb8348254970f416ea88663c88618c74d5211ae1f046ffb76ff3815dd82a
+2026-06-25 04:41:03,293:DEBUG:botocore.hooks:Event request-created.route-53.ChangeResourceRecordSets: calling handler <bound method UserAgentString.rebuild_and_replace_user_agent_handler of <botocore.useragent.UserAgentString object at 0xffffb3f80050>>
+2026-06-25 04:41:03,293:DEBUG:botocore.hooks:Event request-created.route-53.ChangeResourceRecordSets: calling handler <function add_retry_headers at 0xffffb4296840>
+2026-06-25 04:41:03,293:DEBUG:botocore.endpoint:Sending http request: <AWSPreparedRequest stream_output=False, method=POST, url=https://route53.amazonaws.com/2013-04-01/hostedzone/Z02292833BQ3CDL2CIU8N/rrset/, headers={'User-Agent': b'Boto3/1.43.36 md/Botocore#1.43.36 ua/2.1 os/linux#6.10.14-linuxkit md/arch#aarch64 lang/python#3.13.5 md/pyimpl#CPython m/D,b,Z,n cfg/retry-mode#legacy Botocore/1.43.36', 'X-Amz-Date': b'20260625T044103Z', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIAYWVWOCL2YTHDCLNC/20260625/us-east-1/route53/aws4_request, SignedHeaders=host;x-amz-date, Signature=03c5bb8348254970f416ea88663c88618c74d5211ae1f046ffb76ff3815dd82a', 'amz-sdk-invocation-id': b'1dcd5839-36ae-4fab-b4a8-575d6c484acc', 'amz-sdk-request': b'attempt=1', 'Content-Length': '515'}>
+2026-06-25 04:41:03,293:DEBUG:botocore.httpsession:Certificate path: /opt/certbot/lib/python3.13/site-packages/certifi/cacert.pem
+2026-06-25 04:41:03,495:DEBUG:urllib3.connectionpool:https://route53.amazonaws.com:443 "POST /2013-04-01/hostedzone/Z02292833BQ3CDL2CIU8N/rrset/ HTTP/1.1" 403 511
+2026-06-25 04:41:03,495:DEBUG:botocore.parsers:Response headers: {'x-amzn-RequestId': '6dd9332a-d59a-4533-b4ec-aff677894cee', 'Content-Type': 'text/xml', 'Content-Length': '511', 'Date': 'Thu, 25 Jun 2026 04:41:03 GMT'}
+2026-06-25 04:41:03,496:DEBUG:botocore.parsers:Response body:
+b'<?xml version="1.0"?>\n<ErrorResponse xmlns="https://route53.amazonaws.com/doc/2013-04-01/"><Error><Type>Sender</Type><Code>AccessDenied</Code><Message>User: arn:aws:iam::598456799989:user/route53-certmanager is not authorized to perform: route53:ChangeResourceRecordSets on resource: arn:aws:route53:::hostedzone/Z02292833BQ3CDL2CIU8N because no identity-based policy allows the route53:ChangeResourceRecordSets action</Message></Error><RequestId>6dd9332a-d59a-4533-b4ec-aff677894cee</RequestId></ErrorResponse>'
+2026-06-25 04:41:03,497:DEBUG:botocore.hooks:Event needs-retry.route-53.ChangeResourceRecordSets: calling handler <botocore.retryhandler.RetryHandler object at 0xffffb4157e00>
+2026-06-25 04:41:03,497:DEBUG:botocore.retryhandler:No retry needed.
+2026-06-25 04:41:03,497:DEBUG:certbot_dns_route53._internal.dns_route53:Encountered error during perform: An error occurred (AccessDenied) when calling the ChangeResourceRecordSets operation: User: arn:aws:iam::598456799989:user/route53-certmanager is not authorized to perform: route53:ChangeResourceRecordSets on resource: arn:aws:route53:::hostedzone/Z02292833BQ3CDL2CIU8N because no identity-based policy allows the route53:ChangeResourceRecordSets action
+Traceback (most recent call last):
+  File "/opt/certbot/lib/python3.13/site-packages/certbot_dns_route53/_internal/dns_route53.py", line 72, in perform
+    self._change_txt_record("UPSERT",
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+      achall.validation_domain_name(achall.identifier.value),
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      achall.validation(achall.account_key))
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/certbot/lib/python3.13/site-packages/certbot_dns_route53/_internal/dns_route53.py", line 147, in _change_txt_record
+    response = self.r53.change_resource_record_sets(
+        HostedZoneId=zone_id,
+    ...<13 lines>...
+        }
+    )
+  File "/opt/certbot/lib/python3.13/site-packages/botocore/client.py", line 606, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/certbot/lib/python3.13/site-packages/botocore/context.py", line 123, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/certbot/lib/python3.13/site-packages/botocore/client.py", line 1094, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (AccessDenied) when calling the ChangeResourceRecordSets operation: User: arn:aws:iam::598456799989:user/route53-certmanager is not authorized to perform: route53:ChangeResourceRecordSets on resource: arn:aws:route53:::hostedzone/Z02292833BQ3CDL2CIU8N because no identity-based policy allows the route53:ChangeResourceRecordSets action
+2026-06-25 04:41:03,502:DEBUG:certbot._internal.error_handler:Encountered exception:
+Traceback (most recent call last):
+  File "/opt/certbot/lib/python3.13/site-packages/certbot_dns_route53/_internal/dns_route53.py", line 72, in perform
+    self._change_txt_record("UPSERT",
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+      achall.validation_domain_name(achall.identifier.value),
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      achall.validation(achall.account_key))
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/certbot/lib/python3.13/site-packages/certbot_dns_route53/_internal/dns_route53.py", line 147, in _change_txt_record
+    response = self.r53.change_resource_record_sets(
+        HostedZoneId=zone_id,
+    ...<13 lines>...
+        }
+    )
+  File "/opt/certbot/lib/python3.13/site-packages/botocore/client.py", line 606, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/certbot/lib/python3.13/site-packages/botocore/context.py", line 123, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/certbot/lib/python3.13/site-packages/botocore/client.py", line 1094, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (AccessDenied) when calling the ChangeResourceRecordSets operation: User: arn:aws:iam::598456799989:user/route53-certmanager is not authorized to perform: route53:ChangeResourceRecordSets on resource: arn:aws:route53:::hostedzone/Z02292833BQ3CDL2CIU8N because no identity-based policy allows the route53:ChangeResourceRecordSets action
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/certbot/lib/python3.13/site-packages/certbot/_internal/auth_handler.py", line 84, in handle_authorizations
+    resps = self.auth.perform(achalls)
+  File "/opt/certbot/lib/python3.13/site-packages/certbot_dns_route53/_internal/dns_route53.py", line 82, in perform
+    raise errors.PluginError("\n".join([str(e), INSTRUCTIONS]))
+certbot.errors.PluginError: An error occurred (AccessDenied) when calling the ChangeResourceRecordSets operation: User: arn:aws:iam::598456799989:user/route53-certmanager is not authorized to perform: route53:ChangeResourceRecordSets on resource: arn:aws:route53:::hostedzone/Z02292833BQ3CDL2CIU8N because no identity-based policy allows the route53:ChangeResourceRecordSets action
+To use certbot-dns-route53, configure credentials as described at https://boto3.readthedocs.io/en/latest/guide/configuration.html#best-practices-for-configuring-credentials and add the necessary permissions for Route53 access.
+
+2026-06-25 04:41:03,502:DEBUG:certbot._internal.error_handler:Calling registered functions
+2026-06-25 04:41:03,503:INFO:certbot._internal.auth_handler:Cleaning up challenges
+2026-06-25 04:41:03,503:DEBUG:botocore.hooks:Event before-parameter-build.route-53.ListHostedZones: calling handler <function fix_route53_ids at 0xffffb4295300>
+2026-06-25 04:41:03,503:DEBUG:botocore.hooks:Event before-parameter-build.route-53.ListHostedZones: calling handler <function generate_idempotent_uuid at 0xffffb42942c0>
+2026-06-25 04:41:03,503:DEBUG:botocore.hooks:Event before-parameter-build.route-53.ListHostedZones: calling handler <function _handle_request_validation_mode_member at 0xffffb4297060>
+2026-06-25 04:41:03,503:DEBUG:botocore.regions:Calling endpoint provider with parameters: {'UseDualStack': False, 'UseFIPS': False, 'Region': 'aws-global'}
+2026-06-25 04:41:03,503:DEBUG:botocore.regions:Endpoint provider result: https://route53.amazonaws.com
+2026-06-25 04:41:03,504:DEBUG:botocore.regions:Selecting from endpoint provider's list of auth schemes: "sigv4". User selected auth scheme is: "None"
+2026-06-25 04:41:03,504:DEBUG:botocore.regions:Selected auth type "v4" as "v4" with signing context params: {'region': 'us-east-1'}
+2026-06-25 04:41:03,504:DEBUG:botocore.hooks:Event before-call.route-53.ListHostedZones: calling handler <function add_recursion_detection_header at 0xffffb4273ce0>
+2026-06-25 04:41:03,504:DEBUG:botocore.hooks:Event before-call.route-53.ListHostedZones: calling handler <function inject_api_version_header_if_needed at 0xffffb4295da0>
+2026-06-25 04:41:03,504:DEBUG:botocore.endpoint:Making request for OperationModel(name=ListHostedZones) with params: {'url_path': '/2013-04-01/hostedzone', 'query_string': {}, 'method': 'GET', 'headers': {'User-Agent': 'Boto3/1.43.36 md/Botocore#1.43.36 ua/2.1 os/linux#6.10.14-linuxkit md/arch#aarch64 lang/python#3.13.5 md/pyimpl#CPython m/b,C,D,Z,n cfg/retry-mode#legacy Botocore/1.43.36'}, 'body': b'', 'url': 'https://route53.amazonaws.com/2013-04-01/hostedzone', 'context': {'client_region': 'aws-global', 'client_config': <botocore.config.Config object at 0xffffb4156120>, 'has_streaming_input': False, 'auth_type': 'v4', 'unsigned_payload': None, 'auth_options': ['aws.auth#sigv4'], 'signing': {'region': 'us-east-1'}, 'endpoint_properties': {'authSchemes': [{'name': 'sigv4', 'signingRegion': 'us-east-1'}]}}}
+2026-06-25 04:41:03,504:DEBUG:botocore.hooks:Event request-created.route-53.ListHostedZones: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0xffffb4155fd0>>
+2026-06-25 04:41:03,504:DEBUG:botocore.hooks:Event choose-signer.route-53.ListHostedZones: calling handler <function set_operation_specific_signer at 0xffffb4273f60>
+2026-06-25 04:41:03,505:DEBUG:botocore.auth:Calculating signature using v4 auth.
+2026-06-25 04:41:03,505:DEBUG:botocore.auth:CanonicalRequest:
+GET
+/2013-04-01/hostedzone
+
+host:route53.amazonaws.com
+x-amz-date:20260625T044103Z
+
+host;x-amz-date
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2026-06-25 04:41:03,505:DEBUG:botocore.auth:StringToSign:
+AWS4-HMAC-SHA256
+20260625T044103Z
+20260625/us-east-1/route53/aws4_request
+b2dda4175c9b2ff05ecd5aaf3285e18a435f530a1c01922c6a5ab6d6a70278e7
+2026-06-25 04:41:03,505:DEBUG:botocore.auth:Signature:
+042be9b44257dd1bbefc810fd536b2c1736c63e56fcf691d854962a83ddb269d
+2026-06-25 04:41:03,505:DEBUG:botocore.hooks:Event request-created.route-53.ListHostedZones: calling handler <bound method UserAgentString.rebuild_and_replace_user_agent_handler of <botocore.useragent.UserAgentString object at 0xffffb3f80050>>
+2026-06-25 04:41:03,505:DEBUG:botocore.hooks:Event request-created.route-53.ListHostedZones: calling handler <function add_retry_headers at 0xffffb4296840>
+2026-06-25 04:41:03,505:DEBUG:botocore.endpoint:Sending http request: <AWSPreparedRequest stream_output=False, method=GET, url=https://route53.amazonaws.com/2013-04-01/hostedzone, headers={'User-Agent': b'Boto3/1.43.36 md/Botocore#1.43.36 ua/2.1 os/linux#6.10.14-linuxkit md/arch#aarch64 lang/python#3.13.5 md/pyimpl#CPython m/b,C,D,Z,n cfg/retry-mode#legacy Botocore/1.43.36', 'X-Amz-Date': b'20260625T044103Z', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIAYWVWOCL2YTHDCLNC/20260625/us-east-1/route53/aws4_request, SignedHeaders=host;x-amz-date, Signature=042be9b44257dd1bbefc810fd536b2c1736c63e56fcf691d854962a83ddb269d', 'amz-sdk-invocation-id': b'b10427f6-868c-4f38-b931-7478e750ba65', 'amz-sdk-request': b'attempt=1'}>
+2026-06-25 04:41:03,505:DEBUG:botocore.httpsession:Certificate path: /opt/certbot/lib/python3.13/site-packages/certifi/cacert.pem
+2026-06-25 04:41:03,824:DEBUG:urllib3.connectionpool:https://route53.amazonaws.com:443 "GET /2013-04-01/hostedzone HTTP/1.1" 200 492
+2026-06-25 04:41:03,825:DEBUG:botocore.parsers:Response headers: {'x-amzn-RequestId': '45c0c428-fd8b-4d9f-8dbb-5b70d4e2417c', 'Content-Type': 'text/xml', 'Content-Length': '492', 'Date': 'Thu, 25 Jun 2026 04:41:03 GMT'}
+2026-06-25 04:41:03,825:DEBUG:botocore.parsers:Response body:
+b'<?xml version="1.0"?>\n<ListHostedZonesResponse xmlns="https://route53.amazonaws.com/doc/2013-04-01/"><HostedZones><HostedZone><Id>/hostedzone/Z02292833BQ3CDL2CIU8N</Id><Name>devtokki.com.</Name><CallerReference>e3dbbc31-c716-48b4-a141-8bf049556be9</CallerReference><Config><Comment></Comment><PrivateZone>false</PrivateZone></Config><ResourceRecordSetCount>3</ResourceRecordSetCount></HostedZone></HostedZones><IsTruncated>false</IsTruncated><MaxItems>100</MaxItems></ListHostedZonesResponse>'
+2026-06-25 04:41:03,825:DEBUG:botocore.hooks:Event needs-retry.route-53.ListHostedZones: calling handler <botocore.retryhandler.RetryHandler object at 0xffffb4157e00>
+2026-06-25 04:41:03,825:DEBUG:botocore.retryhandler:No retry needed.
+2026-06-25 04:41:03,826:DEBUG:botocore.hooks:Event before-parameter-build.route-53.ChangeResourceRecordSets: calling handler <function fix_route53_ids at 0xffffb4295300>
+2026-06-25 04:41:03,826:DEBUG:botocore.handlers:HostedZoneId /hostedzone/Z02292833BQ3CDL2CIU8N -> Z02292833BQ3CDL2CIU8N
+2026-06-25 04:41:03,826:DEBUG:botocore.hooks:Event before-parameter-build.route-53.ChangeResourceRecordSets: calling handler <function generate_idempotent_uuid at 0xffffb42942c0>
+2026-06-25 04:41:03,826:DEBUG:botocore.hooks:Event before-parameter-build.route-53.ChangeResourceRecordSets: calling handler <function _handle_request_validation_mode_member at 0xffffb4297060>
+2026-06-25 04:41:03,826:DEBUG:botocore.regions:Calling endpoint provider with parameters: {'UseDualStack': False, 'UseFIPS': False, 'Region': 'aws-global'}
+2026-06-25 04:41:03,826:DEBUG:botocore.regions:Endpoint provider result: https://route53.amazonaws.com
+2026-06-25 04:41:03,826:DEBUG:botocore.regions:Selecting from endpoint provider's list of auth schemes: "sigv4". User selected auth scheme is: "None"
+2026-06-25 04:41:03,826:DEBUG:botocore.regions:Selected auth type "v4" as "v4" with signing context params: {'region': 'us-east-1'}
+2026-06-25 04:41:03,827:DEBUG:botocore.hooks:Event before-call.route-53.ChangeResourceRecordSets: calling handler <function add_recursion_detection_header at 0xffffb4273ce0>
+2026-06-25 04:41:03,827:DEBUG:botocore.hooks:Event before-call.route-53.ChangeResourceRecordSets: calling handler <function inject_api_version_header_if_needed at 0xffffb4295da0>
+2026-06-25 04:41:03,827:DEBUG:botocore.endpoint:Making request for OperationModel(name=ChangeResourceRecordSets) with params: {'url_path': '/2013-04-01/hostedzone/Z02292833BQ3CDL2CIU8N/rrset/', 'query_string': {}, 'method': 'POST', 'headers': {'User-Agent': 'Boto3/1.43.36 md/Botocore#1.43.36 ua/2.1 os/linux#6.10.14-linuxkit md/arch#aarch64 lang/python#3.13.5 md/pyimpl#CPython m/D,b,Z,n cfg/retry-mode#legacy Botocore/1.43.36'}, 'body': b'<ChangeResourceRecordSetsRequest xmlns="https://route53.amazonaws.com/doc/2013-04-01/"><ChangeBatch><Comment>certbot-dns-route53 certificate validation DELETE</Comment><Changes><Change><Action>DELETE</Action><ResourceRecordSet><Name>_acme-challenge.my.devtokki.com</Name><Type>TXT</Type><TTL>10</TTL><ResourceRecords><ResourceRecord><Value>"_p626xsjlw7FcVyiEmpNmX_PEG7Bs4qH5uatlqCVB30"</Value></ResourceRecord></ResourceRecords></ResourceRecordSet></Change></Changes></ChangeBatch></ChangeResourceRecordSetsRequest>', 'url': 'https://route53.amazonaws.com/2013-04-01/hostedzone/Z02292833BQ3CDL2CIU8N/rrset/', 'context': {'client_region': 'aws-global', 'client_config': <botocore.config.Config object at 0xffffb4156120>, 'has_streaming_input': False, 'auth_type': 'v4', 'unsigned_payload': None, 'auth_options': ['aws.auth#sigv4'], 'signing': {'region': 'us-east-1'}, 'endpoint_properties': {'authSchemes': [{'name': 'sigv4', 'signingRegion': 'us-east-1'}]}}}
+2026-06-25 04:41:03,827:DEBUG:botocore.hooks:Event request-created.route-53.ChangeResourceRecordSets: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0xffffb4155fd0>>
+2026-06-25 04:41:03,827:DEBUG:botocore.hooks:Event choose-signer.route-53.ChangeResourceRecordSets: calling handler <function set_operation_specific_signer at 0xffffb4273f60>
+2026-06-25 04:41:03,827:DEBUG:botocore.auth:Calculating signature using v4 auth.
+2026-06-25 04:41:03,827:DEBUG:botocore.auth:CanonicalRequest:
+POST
+/2013-04-01/hostedzone/Z02292833BQ3CDL2CIU8N/rrset/
+
+host:route53.amazonaws.com
+x-amz-date:20260625T044103Z
+
+host;x-amz-date
+2967cf91d9cb4af0346b0278e4bfccae9484ee17deb870dacbdbf5d344be2b1b
+2026-06-25 04:41:03,827:DEBUG:botocore.auth:StringToSign:
+AWS4-HMAC-SHA256
+20260625T044103Z
+20260625/us-east-1/route53/aws4_request
+44c59a7e39e7e60aa7e696283e0682ef34ff32764cf1084e56b7012b1015b344
+2026-06-25 04:41:03,828:DEBUG:botocore.auth:Signature:
+6af5612df5251a04559b745bc727ce1f0c28079d7d8079a7e1a7c57e5e7f2710
+2026-06-25 04:41:03,828:DEBUG:botocore.hooks:Event request-created.route-53.ChangeResourceRecordSets: calling handler <bound method UserAgentString.rebuild_and_replace_user_agent_handler of <botocore.useragent.UserAgentString object at 0xffffb3f80050>>
+2026-06-25 04:41:03,828:DEBUG:botocore.hooks:Event request-created.route-53.ChangeResourceRecordSets: calling handler <function add_retry_headers at 0xffffb4296840>
+2026-06-25 04:41:03,828:DEBUG:botocore.endpoint:Sending http request: <AWSPreparedRequest stream_output=False, method=POST, url=https://route53.amazonaws.com/2013-04-01/hostedzone/Z02292833BQ3CDL2CIU8N/rrset/, headers={'User-Agent': b'Boto3/1.43.36 md/Botocore#1.43.36 ua/2.1 os/linux#6.10.14-linuxkit md/arch#aarch64 lang/python#3.13.5 md/pyimpl#CPython m/D,b,Z,n cfg/retry-mode#legacy Botocore/1.43.36', 'X-Amz-Date': b'20260625T044103Z', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIAYWVWOCL2YTHDCLNC/20260625/us-east-1/route53/aws4_request, SignedHeaders=host;x-amz-date, Signature=6af5612df5251a04559b745bc727ce1f0c28079d7d8079a7e1a7c57e5e7f2710', 'amz-sdk-invocation-id': b'b8d1a7a3-f25d-478c-9aa5-ad6eda73cabd', 'amz-sdk-request': b'attempt=1', 'Content-Length': '515'}>
+2026-06-25 04:41:03,828:DEBUG:botocore.httpsession:Certificate path: /opt/certbot/lib/python3.13/site-packages/certifi/cacert.pem
+2026-06-25 04:41:04,029:DEBUG:urllib3.connectionpool:https://route53.amazonaws.com:443 "POST /2013-04-01/hostedzone/Z02292833BQ3CDL2CIU8N/rrset/ HTTP/1.1" 403 511
+2026-06-25 04:41:04,030:DEBUG:botocore.parsers:Response headers: {'x-amzn-RequestId': '96a0b121-9d29-4c16-8a54-45f50f23b3fb', 'Content-Type': 'text/xml', 'Content-Length': '511', 'Date': 'Thu, 25 Jun 2026 04:41:04 GMT'}
+2026-06-25 04:41:04,030:DEBUG:botocore.parsers:Response body:
+b'<?xml version="1.0"?>\n<ErrorResponse xmlns="https://route53.amazonaws.com/doc/2013-04-01/"><Error><Type>Sender</Type><Code>AccessDenied</Code><Message>User: arn:aws:iam::598456799989:user/route53-certmanager is not authorized to perform: route53:ChangeResourceRecordSets on resource: arn:aws:route53:::hostedzone/Z02292833BQ3CDL2CIU8N because no identity-based policy allows the route53:ChangeResourceRecordSets action</Message></Error><RequestId>96a0b121-9d29-4c16-8a54-45f50f23b3fb</RequestId></ErrorResponse>'
+2026-06-25 04:41:04,030:DEBUG:botocore.hooks:Event needs-retry.route-53.ChangeResourceRecordSets: calling handler <botocore.retryhandler.RetryHandler object at 0xffffb4157e00>
+2026-06-25 04:41:04,030:DEBUG:botocore.retryhandler:No retry needed.
+2026-06-25 04:41:04,031:DEBUG:certbot_dns_route53._internal.dns_route53:Encountered error during cleanup: An error occurred (AccessDenied) when calling the ChangeResourceRecordSets operation: User: arn:aws:iam::598456799989:user/route53-certmanager is not authorized to perform: route53:ChangeResourceRecordSets on resource: arn:aws:route53:::hostedzone/Z02292833BQ3CDL2CIU8N because no identity-based policy allows the route53:ChangeResourceRecordSets action
+Traceback (most recent call last):
+  File "/opt/certbot/lib/python3.13/site-packages/certbot_dns_route53/_internal/dns_route53.py", line 72, in perform
+    self._change_txt_record("UPSERT",
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+      achall.validation_domain_name(achall.identifier.value),
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      achall.validation(achall.account_key))
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/certbot/lib/python3.13/site-packages/certbot_dns_route53/_internal/dns_route53.py", line 147, in _change_txt_record
+    response = self.r53.change_resource_record_sets(
+        HostedZoneId=zone_id,
+    ...<13 lines>...
+        }
+    )
+  File "/opt/certbot/lib/python3.13/site-packages/botocore/client.py", line 606, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/certbot/lib/python3.13/site-packages/botocore/context.py", line 123, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/certbot/lib/python3.13/site-packages/botocore/client.py", line 1094, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (AccessDenied) when calling the ChangeResourceRecordSets operation: User: arn:aws:iam::598456799989:user/route53-certmanager is not authorized to perform: route53:ChangeResourceRecordSets on resource: arn:aws:route53:::hostedzone/Z02292833BQ3CDL2CIU8N because no identity-based policy allows the route53:ChangeResourceRecordSets action
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/certbot/lib/python3.13/site-packages/certbot/_internal/auth_handler.py", line 84, in handle_authorizations
+    resps = self.auth.perform(achalls)
+  File "/opt/certbot/lib/python3.13/site-packages/certbot_dns_route53/_internal/dns_route53.py", line 82, in perform
+    raise errors.PluginError("\n".join([str(e), INSTRUCTIONS]))
+certbot.errors.PluginError: An error occurred (AccessDenied) when calling the ChangeResourceRecordSets operation: User: arn:aws:iam::598456799989:user/route53-certmanager is not authorized to perform: route53:ChangeResourceRecordSets on resource: arn:aws:route53:::hostedzone/Z02292833BQ3CDL2CIU8N because no identity-based policy allows the route53:ChangeResourceRecordSets action
+To use certbot-dns-route53, configure credentials as described at https://boto3.readthedocs.io/en/latest/guide/configuration.html#best-practices-for-configuring-credentials and add the necessary permissions for Route53 access.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/certbot/lib/python3.13/site-packages/certbot_dns_route53/_internal/dns_route53.py", line 96, in _cleanup
+    self._change_txt_record("DELETE", validation_name, validation)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/certbot/lib/python3.13/site-packages/certbot_dns_route53/_internal/dns_route53.py", line 147, in _change_txt_record
+    response = self.r53.change_resource_record_sets(
+        HostedZoneId=zone_id,
+    ...<13 lines>...
+        }
+    )
+  File "/opt/certbot/lib/python3.13/site-packages/botocore/client.py", line 606, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/certbot/lib/python3.13/site-packages/botocore/context.py", line 123, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/certbot/lib/python3.13/site-packages/botocore/client.py", line 1094, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (AccessDenied) when calling the ChangeResourceRecordSets operation: User: arn:aws:iam::598456799989:user/route53-certmanager is not authorized to perform: route53:ChangeResourceRecordSets on resource: arn:aws:route53:::hostedzone/Z02292833BQ3CDL2CIU8N because no identity-based policy allows the route53:ChangeResourceRecordSets action
+2026-06-25 04:41:04,033:DEBUG:certbot._internal.log:Exiting abnormally:
+Traceback (most recent call last):
+  File "/opt/certbot/lib/python3.13/site-packages/certbot_dns_route53/_internal/dns_route53.py", line 72, in perform
+    self._change_txt_record("UPSERT",
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+      achall.validation_domain_name(achall.identifier.value),
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      achall.validation(achall.account_key))
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/certbot/lib/python3.13/site-packages/certbot_dns_route53/_internal/dns_route53.py", line 147, in _change_txt_record
+    response = self.r53.change_resource_record_sets(
+        HostedZoneId=zone_id,
+    ...<13 lines>...
+        }
+    )
+  File "/opt/certbot/lib/python3.13/site-packages/botocore/client.py", line 606, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/certbot/lib/python3.13/site-packages/botocore/context.py", line 123, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/certbot/lib/python3.13/site-packages/botocore/client.py", line 1094, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (AccessDenied) when calling the ChangeResourceRecordSets operation: User: arn:aws:iam::598456799989:user/route53-certmanager is not authorized to perform: route53:ChangeResourceRecordSets on resource: arn:aws:route53:::hostedzone/Z02292833BQ3CDL2CIU8N because no identity-based policy allows the route53:ChangeResourceRecordSets action
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/certbot/bin/certbot", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "/opt/certbot/lib/python3.13/site-packages/certbot/main.py", line 18, in main
+    return internal_main.main(cli_args)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/opt/certbot/lib/python3.13/site-packages/certbot/_internal/main.py", line 1886, in main
+    return config.func(config, plugins)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/certbot/lib/python3.13/site-packages/certbot/_internal/main.py", line 1598, in certonly
+    lineage = _get_and_save_cert(le_client, config, sans, certname, lineage)
+  File "/opt/certbot/lib/python3.13/site-packages/certbot/_internal/main.py", line 143, in _get_and_save_cert
+    lineage = le_client.obtain_and_enroll_certificate(sans, certname)
+  File "/opt/certbot/lib/python3.13/site-packages/certbot/_internal/client.py", line 533, in obtain_and_enroll_certificate
+    cert, chain, key, _ = self.obtain_certificate(sans)
+                          ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/opt/certbot/lib/python3.13/site-packages/certbot/_internal/client.py", line 434, in obtain_certificate
+    orderr = self._get_order_and_authorizations(csr.data, self.config.allow_subset_of_names)
+  File "/opt/certbot/lib/python3.13/site-packages/certbot/_internal/client.py", line 512, in _get_order_and_authorizations
+    authzr = self.auth_handler.handle_authorizations(orderr, self.config, best_effort)
+  File "/opt/certbot/lib/python3.13/site-packages/certbot/_internal/auth_handler.py", line 84, in handle_authorizations
+    resps = self.auth.perform(achalls)
+  File "/opt/certbot/lib/python3.13/site-packages/certbot_dns_route53/_internal/dns_route53.py", line 82, in perform
+    raise errors.PluginError("\n".join([str(e), INSTRUCTIONS]))
+certbot.errors.PluginError: An error occurred (AccessDenied) when calling the ChangeResourceRecordSets operation: User: arn:aws:iam::598456799989:user/route53-certmanager is not authorized to perform: route53:ChangeResourceRecordSets on resource: arn:aws:route53:::hostedzone/Z02292833BQ3CDL2CIU8N because no identity-based policy allows the route53:ChangeResourceRecordSets action
+To use certbot-dns-route53, configure credentials as described at https://boto3.readthedocs.io/en/latest/guide/configuration.html#best-practices-for-configuring-credentials and add the necessary permissions for Route53 access.
+2026-06-25 04:41:04,035:ERROR:certbot._internal.log:An error occurred (AccessDenied) when calling the ChangeResourceRecordSets operation: User: arn:aws:iam::598456799989:user/route53-certmanager is not authorized to perform: route53:ChangeResourceRecordSets on resource: arn:aws:route53:::hostedzone/Z02292833BQ3CDL2CIU8N because no identity-based policy allows the route53:ChangeResourceRecordSets action
+To use certbot-dns-route53, configure credentials as described at https://boto3.readthedocs.io/en/latest/guide/configuration.html#best-practices-for-configuring-credentials and add the necessary permissions for Route53 access.

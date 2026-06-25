@@ -21,3 +21,49 @@ services:
       - OPENAI_BASE_URL=http://host.docker.internal:12345/v1   # LM Studio 기본 엔드포인트
     extra_hosts:
       - "host.docker.internal:host-gateway"           # 호스트 LM Studio 접근
+
+  # Streamlit 챗봇 앱 (app.py) - jupyter와 동일 이미지 재사용 (streamlit/langchain/chromadb 포함)
+  streamlit:
+    image: 'rag-jupyter:latest'
+    container_name: rag_streamlit
+    restart: unless-stopped
+    depends_on:
+      - chromadb                                       # chroma 먼저 기동
+    working_dir: /home/jovyan/work
+    command: ["streamlit", "run", "app.py", "--server.address", "0.0.0.0", "--server.port", "8501", "--server.headless", "true"]
+    ports:
+      - "10021:8501"                # Streamlit 앱
+    healthcheck:                    # 베이스 이미지의 Jupyter(8888) 헬스체크 대체
+      test: ["CMD", "curl", "-f", "http://localhost:8501/_stcore/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 30s
+    volumes:
+      - ./work:/home/jovyan/work    # app.py + PDF 공유
+    environment:
+      - TZ=Asia/Seoul
+      - LMSTUDIO_BASE_URL=http://host.docker.internal:12345/v1   # LM Studio 엔드포인트
+      - CHROMA_HOST=chromadb        # 도커 네트워크 내 chroma 호스트명
+      - CHROMA_PORT=8000
+    extra_hosts:
+      - "host.docker.internal:host-gateway"           # 호스트 LM Studio 접근
+
+  chromadb:
+    image: chromadb/chroma:latest
+    container_name: chromadb
+    restart: unless-stopped
+    volumes:
+      - ./chroma/data:/data        # chroma 1.x 영속 경로는 /data (기존 /chroma/chroma는 미사용)
+
+  nginx-proxy:
+    image: 'jc21/nginx-proxy-manager:latest'
+    container_name: nginx-proxy
+    restart: unless-stopped
+    ports:
+      - '81:81' # 관리자 페이지 포트
+      - '80:80'
+      - '443:443'
+    volumes:
+      - ./ngx/data:/data
+      - ./ngx/letsencrypt:/etc/letsencrypt

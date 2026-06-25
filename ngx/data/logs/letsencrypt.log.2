@@ -1,0 +1,102 @@
+2026-06-25 04:43:03,985:DEBUG:certbot._internal.main:certbot version: 5.6.0
+2026-06-25 04:43:03,985:DEBUG:certbot._internal.main:Location of certbot entry point: /opt/certbot/bin/certbot
+2026-06-25 04:43:03,985:DEBUG:certbot._internal.main:Arguments: ['-n', '--config', '/etc/letsencrypt.ini', '--work-dir', '/tmp/letsencrypt-lib', '--logs-dir', '/data/logs', '--cert-name', 'npm-3', '--agree-tos', '-m', 'kevin2.jhpark@gmail.com', '--preferred-challenges', 'dns', '--domains', 'my.devtokki.com', '--authenticator', 'dns-route53', '--key-type', 'ecdsa']
+2026-06-25 04:43:03,985:DEBUG:certbot._internal.main:Discovered plugins: PluginsRegistry(PluginEntryPoint#certbot-route53:auth,PluginEntryPoint#dns-route53,PluginEntryPoint#manual,PluginEntryPoint#null,PluginEntryPoint#standalone,PluginEntryPoint#webroot)
+2026-06-25 04:43:04,067:DEBUG:certbot._internal.log:Root logging level set at 30
+2026-06-25 04:43:04,068:DEBUG:certbot._internal.plugins.selection:Requested authenticator dns-route53 and installer None
+2026-06-25 04:43:04,068:DEBUG:botocore.hooks:Changing event name from creating-client-class.iot-data to creating-client-class.iot-data-plane
+2026-06-25 04:43:04,071:DEBUG:botocore.hooks:Changing event name from before-call.apigateway to before-call.api-gateway
+2026-06-25 04:43:04,071:DEBUG:botocore.hooks:Changing event name from request-created.machinelearning.Predict to request-created.machine-learning.Predict
+2026-06-25 04:43:04,072:DEBUG:botocore.hooks:Changing event name from before-parameter-build.autoscaling.CreateLaunchConfiguration to before-parameter-build.auto-scaling.CreateLaunchConfiguration
+2026-06-25 04:43:04,072:DEBUG:botocore.hooks:Changing event name from before-parameter-build.route53 to before-parameter-build.route-53
+2026-06-25 04:43:04,072:DEBUG:botocore.hooks:Changing event name from request-created.cloudsearchdomain.Search to request-created.cloudsearch-domain.Search
+2026-06-25 04:43:04,073:DEBUG:botocore.hooks:Changing event name from docs.*.autoscaling.CreateLaunchConfiguration.complete-section to docs.*.auto-scaling.CreateLaunchConfiguration.complete-section
+2026-06-25 04:43:04,074:DEBUG:botocore.hooks:Changing event name from before-parameter-build.logs.CreateExportTask to before-parameter-build.cloudwatch-logs.CreateExportTask
+2026-06-25 04:43:04,074:DEBUG:botocore.hooks:Changing event name from docs.*.logs.CreateExportTask.complete-section to docs.*.cloudwatch-logs.CreateExportTask.complete-section
+2026-06-25 04:43:04,074:DEBUG:botocore.hooks:Changing event name from before-parameter-build.cloudsearchdomain.Search to before-parameter-build.cloudsearch-domain.Search
+2026-06-25 04:43:04,074:DEBUG:botocore.hooks:Changing event name from docs.*.cloudsearchdomain.Search.complete-section to docs.*.cloudsearch-domain.Search.complete-section
+2026-06-25 04:43:04,075:DEBUG:certbot._internal.log:Exiting abnormally:
+Traceback (most recent call last):
+  File "/opt/certbot/bin/certbot", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "/opt/certbot/lib/python3.13/site-packages/certbot/main.py", line 18, in main
+    return internal_main.main(cli_args)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/opt/certbot/lib/python3.13/site-packages/certbot/_internal/main.py", line 1886, in main
+    return config.func(config, plugins)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/certbot/lib/python3.13/site-packages/certbot/_internal/main.py", line 1579, in certonly
+    installer, auth = plug_sel.choose_configurator_plugins(config, plugins, "certonly")
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/certbot/lib/python3.13/site-packages/certbot/_internal/plugins/selection.py", line 247, in choose_configurator_plugins
+    authenticator = pick_authenticator(config, req_auth, plugins)
+  File "/opt/certbot/lib/python3.13/site-packages/certbot/_internal/plugins/selection.py", line 43, in pick_authenticator
+    return pick_plugin(
+        config, default, plugins, question, (interfaces.Authenticator,))
+  File "/opt/certbot/lib/python3.13/site-packages/certbot/_internal/plugins/selection.py", line 115, in pick_plugin
+    filtered.init(config)
+    ~~~~~~~~~~~~~^^^^^^^^
+  File "/opt/certbot/lib/python3.13/site-packages/certbot/_internal/plugins/disco.py", line 232, in init
+    return [plugin_ep.init(config) for plugin_ep
+            ~~~~~~~~~~~~~~^^^^^^^^
+  File "/opt/certbot/lib/python3.13/site-packages/certbot/_internal/plugins/disco.py", line 93, in init
+    self._initialized = self.plugin_cls(config, self.name)
+                        ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/opt/certbot/lib/python3.13/site-packages/certbot_dns_route53/_internal/dns_route53.py", line 42, in __init__
+    self.r53 = boto3.client("route53")
+               ~~~~~~~~~~~~^^^^^^^^^^^
+  File "/opt/certbot/lib/python3.13/site-packages/boto3/__init__.py", line 93, in client
+    return _get_default_session().client(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/certbot/lib/python3.13/site-packages/boto3/__init__.py", line 81, in _get_default_session
+    setup_default_session()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/certbot/lib/python3.13/site-packages/boto3/__init__.py", line 35, in setup_default_session
+    DEFAULT_SESSION = Session(**kwargs)
+  File "/opt/certbot/lib/python3.13/site-packages/boto3/session.py", line 106, in __init__
+    self._setup_loader()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/opt/certbot/lib/python3.13/site-packages/boto3/session.py", line 147, in _setup_loader
+    self._loader = self._session.get_component('data_loader')
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/opt/certbot/lib/python3.13/site-packages/botocore/session.py", line 816, in get_component
+    return self._components.get_component(name)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/opt/certbot/lib/python3.13/site-packages/botocore/session.py", line 1201, in get_component
+    self._components[name] = factory()
+                             ~~~~~~~^^
+  File "/opt/certbot/lib/python3.13/site-packages/botocore/session.py", line 201, in <lambda>
+    lambda: create_loader(self.get_config_variable('data_path')),
+                          ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/opt/certbot/lib/python3.13/site-packages/botocore/session.py", line 325, in get_config_variable
+    return self.get_component('config_store').get_config_variable(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        logical_name
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/certbot/lib/python3.13/site-packages/botocore/configprovider.py", line 532, in get_config_variable
+    return provider.provide()
+           ~~~~~~~~~~~~~~~~^^
+  File "/opt/certbot/lib/python3.13/site-packages/botocore/configprovider.py", line 738, in provide
+    value = provider.provide()
+  File "/opt/certbot/lib/python3.13/site-packages/botocore/configprovider.py", line 825, in provide
+    scoped_config = self._session.get_scoped_config()
+  File "/opt/certbot/lib/python3.13/site-packages/botocore/session.py", line 414, in get_scoped_config
+    profile_map = self._build_profile_map()
+  File "/opt/certbot/lib/python3.13/site-packages/botocore/session.py", line 310, in _build_profile_map
+    self._profile_map = self.full_config['profiles']
+                        ^^^^^^^^^^^^^^^^
+  File "/opt/certbot/lib/python3.13/site-packages/botocore/session.py", line 441, in full_config
+    self._config = botocore.configloader.load_config(config_file)
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/opt/certbot/lib/python3.13/site-packages/botocore/configloader.py", line 105, in load_config
+    parsed = raw_config_parse(config_filename)
+  File "/opt/certbot/lib/python3.13/site-packages/botocore/configloader.py", line 150, in raw_config_parse
+    raise botocore.exceptions.ConfigParseError(
+        path=_unicode_path(path), error=e
+    ) from None
+botocore.exceptions.ConfigParseError: Unable to parse config file: /etc/letsencrypt/credentials/credentials-3
+2026-06-25 04:43:04,080:ERROR:certbot._internal.log:An unexpected error occurred:
+2026-06-25 04:43:04,080:ERROR:certbot._internal.log:botocore.exceptions.ConfigParseError: Unable to parse config file: /etc/letsencrypt/credentials/credentials-3

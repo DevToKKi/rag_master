@@ -9,5 +9,8 @@ RUN pip install --no-cache-dir \
     langchain-core \
     langchain-openai \
     langchain-community \
+    langchain-chroma \
+    chromadb \
+    streamlit \
     tiktoken \
     pypdf

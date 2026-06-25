@@ -1,0 +1,7 @@
+streamlit==1.58.0
+langchain-openai
+langchain-community
+langchain-text-splitters
+langchain-chroma
+chromadb
+pypdf

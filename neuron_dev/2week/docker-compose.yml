@@ -1,0 +1,48 @@
+# KB 부동산 RAG 챗봇 — 완전 독립 compose
+#
+# 띄우기:   docker compose up -d --build
+# 로그:     docker compose logs -f
+# 내리기:   docker compose down
+#
+# 전제: 기존 chromadb / nginx-proxy 가 붙어 있는 docker 네트워크 'linker' 가 이미 존재.
+#       (이 컴포즈는 그 네트워크에 external 로 합류만 한다)
+
+services:
+  kb-rag:
+    build: .
+    image: kb-rag:latest
+    container_name: kb_rag
+    restart: unless-stopped
+
+    environment:
+      # ── LM Studio (임베딩 + LLM) ──────────────────────────────
+      # ★ EMBED_MODEL / LLM_MODEL 은 LM Studio 에 "실제 로드된" 모델명과 일치해야 함
+      LMSTUDIO_BASE_URL: "http://host.docker.internal:12345/v1"
+      EMBED_MODEL: "embedding-8b:sl"
+      LLM_MODEL: "unsloth/gemma-4-e2b-it"
+      # ── 원격 ChromaDB (같은 네트워크의 컨테이너 이름) ──────────
+      CHROMA_HOST: "chromadb"
+      CHROMA_PORT: "8000"
+      COLLECTION: "kb2024"
+      # 컬렉션이 이미 적재돼 있으면 PDF 는 안 읽음. 비어 있을 때만 사용.
+      PDF_PATH: "/app/_kb2024.pdf"
+
+    # host.docker.internal 로 호스트의 LM Studio(12345) 도달 (Docker Desktop/Linux 공통)
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+    # app.py 를 라이브로 수정하고 싶으면 주석 해제(수정 후 docker compose restart 로 반영).
+    # 와처는 꺼져 있으니 자동 reload 는 안 됨 → 컨테이너 재시작으로 적용.
+    # volumes:
+    #   - ./app.py:/app/app.py:ro
+
+    # 디버그용 직접 접속(선택). NPM 경유라면 없어도 됨. 호스트 8501 충돌 시 주석 처리.
+    ports:
+      - "8501:8501"
+
+    networks:
+      - linker
+
+networks:
+  linker:
+    external: true
